@@ -1,0 +1,287 @@
+// fontSize: {
+    //     'h1': '32px',
+    //     'md-h1': '48px',
+    //     'lg-h1': '60px',
+    //     'xl-h1': '60px',
+
+    //     'h2': '48px',
+    //     'md-h2': '40px',
+    //     'lg-h2': '48px',
+    //     'xl-h2': '48px',
+
+    //     'h3': '36px',
+    //     'md-h3': '32px',
+    //     'lg-h3': '36px',
+    //     'xl-h3': '36px',
+
+    //     'h4': '24px',
+    //     'md-h4': '20px',
+    //     'lg-h4': '24px',
+    //     'xl-h4': '24px',
+
+    //     'h5': '20px',
+    //     'md-h5': '18px',
+    //     'lg-h5': '20px',
+    //     'xl-h5': '20px',
+
+    //     'h6': '18px',
+    //     'md-h6': '16px',
+    //     'lg-h6': '18px',
+    //     'xl-h6': '18px',
+
+    //     'subheading': '18px',
+    //     'md-subheading': '16px',
+    //     'lg-subheading': '18px',
+    //     'xl-subheading': '18px',
+
+    //     'body': '16px',
+    //     'md-body': '14px',
+    //     'lg-body': '16px',
+    //     'xl-body': '16px',
+
+    //     'small-text': '14px',
+    //     'md-small-text': '12px',
+    //     'lg-small-text': '14px',
+    //     'xl-small-text': '14px',
+
+    //     'small-caption': '14px',
+    //     'md-small-caption': '12px',
+    //     'lg-small-caption': '14px',
+    //     'xl-small-caption': '14px',
+
+    //     'small-number': '14px',
+    //     'md-small-number': '12px',
+    //     'lg-small-number': '14px',
+    //     'xl-small-number': '14px',
+    //   },
+
+    this was my initial configuration and it was working
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src//*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    container: {
+        center: true,
+        padding: '2rem',
+        screens: {
+          'xl': '1000px',
+        //   '2xl': '1400px',
+        },
+    },
+    extend: {
+      fontFamily: {
+        sans: ['Open Sans', 'sans-serif'],
+      },
+      fontSize: {
+        'h1': ['60px', {
+          lineHeight: '125%',
+          letterSpacing: '-0.01em',
+          fontWeight: '700',
+        }],
+        'h2': ['48px', {
+          lineHeight: '125%',
+          letterSpacing: '-0.01em',
+          fontWeight: '700',
+        }],
+        'h3': ['36px', {
+          lineHeight: '125%',
+          letterSpacing: '-0.01em',
+          fontWeight: '700',
+        }],
+        'h4': ['300px', {
+          lineHeight: '125%',
+          letterSpacing: '-0.01em',
+          fontWeight: '700',
+        }],
+        'h5': ['24px', {
+          lineHeight: '125%',
+          letterSpacing: '-0.01em',
+          fontWeight: '700',
+        }],
+        'h6': ['20px', {
+          lineHeight: '125%',
+          letterSpacing: '-0.01em',
+          fontWeight: '700',
+        }],
+        'subheading': ['18px', {
+          lineHeight: '125%',
+          letterSpacing: '-0.01em',
+          fontWeight: '600',
+        }],
+        'body': ['16px', {
+          lineHeight: '170%',
+          letterSpacing: '-0.01em',
+        }],
+        'small-text': ['14px', {
+          lineHeight: '150%',
+          letterSpacing: '-0.01em',
+        }],
+        'small-caption': ['14px', {
+          lineHeight: '125%',
+          letterSpacing: '-0.01em',
+        }],
+        'small-number': ['14px', {
+          lineHeight: '170%',
+          letterSpacing: '-0.01em',
+        }],
+      },
+
+    colors: {
+        gray: {
+            50: '#F9F9F9',
+            100: '#F3F3F3',
+            200: '#C0C0C1',
+            300: '#B5B5B5',
+            400: '#646464',
+            500: '#3C3C3C',
+        },
+        green: {
+            500: '#38844F',
+            600: '#066523',
+            700: '#05511C',
+            'darkGreen': '#081B0E',
+        },
+        red: {
+            'errorRed': '#D62020',
+
+        }
+
+    },
+    padding: {
+        'topper': '20rem',
+    },
+    margin: {
+        'topperSm': '5rem',
+        'topperMd': '10rem',
+    },
+
+
+    },
+  },
+  plugins: [],
+}
+
+/---------------------------------------------
+
+// // import logo from './logo.svg';
+// // import './App.css';
+// import { Route, Router, Routes } from "react-router-dom";
+// import Features from "./components/Features";
+// import Footer from "./components/Footer";
+// import Header from "./components/Header";
+// import Hero from "./components/Hero";
+// import HowItWorks from "./components/HowItWorks";
+// import Home from "./Home";
+
+
+
+// function App() {
+//     return (
+
+//         <Router>
+
+//             <div className="App">
+//                 <Routes>
+//                     <Route path="/" element={<Home />} />
+//                     {/* <Route path="/projects" element={<Projects />} />
+//                     <Route path="/about" element={<About />} />
+//                     <Route path="/projectDetails/:id" element={<ProjectDetails />} /> */}
+//                     {/* <Route path="/contact" element={<Contact />} /> */}
+//                 </Routes>
+//             </div>
+//         </Router>
+
+//     );
+//   }
+
+// export default App;
+
+
+
+
+// import { toast } from "react-toastify";
+// import { AuthLayout } from "../components/auth_layout";
+// import { FormField } from "../components/form_field";
+// import { useMutateLogin } from "../lib/models/auth/hooks";
+// import Button from "../shared/Button";
+// import React, { useState } from "react";
+// import { Router } from "react-router-dom";
+
+// export default function Register() {
+//     const [isLoading, setIsLoading] = useState(false);
+//     const {mutate: onMutateLogin} = useMutateLogin({});
+
+//     async function onSubmit(event) {
+//         event.preventDefault();
+
+//         const formData = new FormData(event.currentTarget);
+//         const values = Object.fromEntries(formData)
+//         console.log(values)
+//         // if (!values.email || !values.password) {
+//         //     toast.error(" fields are required");
+//         //     return;
+//         // }
+//         // setIsLoading(true);
+//         // onMutateLogin(values, {
+//         //     onSuccess: (response) => {
+//         //         // Handle success
+//         //         setIsLoading(false);
+//         //         // const meters = response.customer.meters;
+//         //         toast.error(
+//         //             "You currently do not have any meter attached to your account.Kindly contact your account manager for support"
+//         //         );
+//         //         // removeCookie(POWER_GRID_TOKEN);
+//         //         // removeCookie(ACTIVE_METER_CODE);
+//         //         // setCookie(null, POWER_GRID_TOKEN, response.token);
+//         //         // setCookie(null, ACTIVE_METER_CODE, code);
+//         //         toast.success("Logged in successfully");
+//         //         Router.push('/login');
+//         //     },
+//         //     onError: (error) => {
+//         //         setIsLoading(false);
+//         //         toast.error(error);
+//         //     },
+//         // });
+//     }
+
+
+//     const handleSubmit = () => {}
+//   return (
+//     <AuthLayout
+//       title="Register"
+//       subtitle="Enter your details to start your pension process"
+//       alternativeActionText="Already have an account or are not a retiree?"
+//       alternativeActionLink="/login"
+//     >
+//       <form className="space-y-6 max-w-screen-sm " action="#" onSubmit={onSubmit}>
+//         <div className=" grid grid-cols-1 gap-y-[1rem]  w-full">
+
+//             <FormField id="rsa-pin" label="RSA Pin" type="password" placeholder="xxxxxx"  required />
+//             <FormField id="surname" label="Surname" type="text" placeholder="Surname" required />
+//             <FormField id="email" label="Email Address" type="email" required placeholder="Your email address" autoComplete="email" />
+//         </div>
+//         <div className=" grid grid-cols-[1fr_1fr] md:grid-cols-[180px_180px] gap-x-[1rem] gap-y-[1rem] max-w-screen-sm ">
+
+
+//         <FormField id="password" label="Password" type="password" placeholder="Your password" required helpText="Help text" />
+//         <FormField id="confirm-password" label="Confirm Password" type="password" placeholder="Confirm Password" required />
+//         </div>
+
+//         <div>
+//            <Button
+
+//               text={isLoading ? 'Loading...' : 'Register'}
+//               width='w-full'
+//               padding='py-[0.6rem] px-[1rem]'
+//               type='submit'
+//             />
+//         </div>
+//       </form>
+//     </AuthLayout>
+//   )
+// }
+
+

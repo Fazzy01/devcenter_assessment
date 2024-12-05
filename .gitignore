@@ -1,0 +1,83 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+devcenter_be/node_modules
+devcenter_fe/node_modules
+/.pnp
+.pnp.js
+
+# testing
+devcenter_fe/coverage
+
+# production
+devcenter_fe/build
+
+# misc
+devcenter_fe/.DS_Store
+devcenter_fe/.env.local
+devcenter_fe/.env.development.local
+devcenter_fe/.env.test.local
+devcenter_fe/.env.production.local
+
+devcenter_fe/npm-debug.log*
+devcenter_fe/yarn-debug.log*
+# devcenter_feyarn-error.log*
+
+devcenter_fe/explain.txt
+
+# BACKEND IGNORE
+devcenter_be/dist
+devcenter_be/node_modules
+/build
+
+# Logs
+devcenter_be/logs
+devcenter_be/*.log
+devcenter_be/npm-debug.log*
+devcenter_be/pnpm-debug.log*
+devcenter_be/yarn-debug.log*
+devcenter_be/yarn-error.log*
+devcenter_be/lerna-debug.log*
+
+# OS
+devcenter_be/.DS_Store
+
+# Tests
+devcenter_be/coverage
+devcenter_be/.nyc_output
+
+# IDEs and editors
+devcenter_be/.idea
+devcenter_be/.project
+devcenter_be/.classpath
+devcenter_be/.c9/
+devcenter_be/*.launch
+devcenter_be/.settings/
+devcenter_be/*.sublime-workspace
+
+# IDE - VSCode
+devcenter_be/.vscode/*
+devcenter_be/!.vscode/settings.json
+devcenter_be/!.vscode/tasks.json
+devcenter_be/!.vscode/launch.json
+devcenter_be/!.vscode/extensions.json
+
+# dotenv environment variable files
+devcenter_be/.env
+devcenter_be/.env.development.local
+devcenter_be/.env.test.local
+devcenter_be/.env.production.local
+devcenter_be/.env.local
+
+# temp directory
+devcenter_be/.temp
+devcenter_be/.tmp
+
+# Runtime data
+devcenter_be/pids
+devcenter_be/*.pid
+devcenter_be/*.seed
+devcenter_be/*.pid.lock
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+devcenter_be/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
